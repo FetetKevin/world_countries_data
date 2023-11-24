@@ -2,6 +2,9 @@ function displayLanguages(props) {
     const ul = document.querySelector("ul");
     ul.textContent = "";
 
+    document.querySelector(".data-type").textContent =
+        "10 most spoken languages in the world";
+
     const obj = {};
 
     for (const i of props) {

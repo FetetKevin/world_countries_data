@@ -3,6 +3,9 @@ const displayPopulation = (props) => {
     const ul = document.querySelector("ul");
     ul.textContent = "";
 
+    document.querySelector(".data-type").textContent =
+        "10 most populated countries in the world";
+
     function formatNumberWithDots(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }
