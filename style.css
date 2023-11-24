@@ -1,0 +1,140 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edeef0;
+}
+
+header {
+    text-align: center;
+}
+
+.head {
+    border-bottom: 1px solid rgb(197, 197, 197);
+    box-shadow: 1px 1px 5px rgb(197, 197, 197);
+    background-color: #edeef0;
+}
+
+h1 {
+    color: #f2a93b;
+    font-size: 3.6rem;
+    padding-top: 0.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    padding-bottom: 0.6rem;
+}
+
+header .main {
+    border-bottom: 1px solid rgb(197, 197, 197);
+    box-shadow: 1px 1px 5px rgb(197, 197, 197);
+    padding-top: 1.4rem;
+    padding-bottom: 0.6rem;
+}
+
+header .main button {
+    background-color: #f2a93b;
+    border: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 0.4rem;
+    box-shadow: 1px 1px 5px rgb(197, 197, 197);
+}
+
+header .main button:hover {
+    background-color: #f09f26;
+}
+
+.data-type {
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+}
+
+main {
+    width: 80%;
+    margin: 2.6rem auto;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.8rem;
+    max-height: 2.2rem;
+}
+
+.tooltip p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+.tooltip {
+    font-size: 1.2rem;
+    min-width: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.progress-bar {
+    min-width: 80%;
+    margin: 0 1.4rem;
+    height: 2.2rem;
+    background-color: rgb(197, 197, 197);
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f09f26;
+    height: 100%;
+}
